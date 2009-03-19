@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Test>
+  <Instructions>The test consists of only True and False Questions to test your General Knowledge. For every question that you answer correctly you will get 2 credits. No negative marking is there in this test. </Instructions>
+  <Question>
+    <Number>1</Number>
+    <Type>TF</Type>
+    <Marks>2</Marks>
+    <Text>Dr. Manmohan Singh is the Prime Minister of India.</Text>
+    <Image>NONE</Image>
+    <Difficulty>Easy</Difficulty>
+  </Question>
+  <Question>
+    <Number>2</Number>
+    <Type>TF</Type>
+    <Marks>2</Marks>
+    <Text>Dr. Abdul Kalam is the President of India.</Text>
+    <Image>NONE</Image>
+    <Difficulty>Easy</Difficulty>
+  </Question>
+</Test>
