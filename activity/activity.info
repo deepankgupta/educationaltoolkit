@@ -1,0 +1,8 @@
+[Activity]
+name = EducationalToolkit
+service_name = org.laptop.EducationalToolkitActivity
+class = EducationalToolkitActivity.EducationalToolkitActivity
+icon = activity-EducationalToolkit
+activity_version = 1
+show_launcher = yes
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="question">
+  <xs:complexType>
+  <xs:sequence>
+        
+	<xs:element name="code" type="xs:string"/>
+        <xs:element name="credits" type="xs:integer"/>
+        <xs:element name="time_stipulated" type="xs:integer"/>
+	<xs:element name="level_of_diff" type="xs:string"/>
+	<xs:element name="advise" type="xs:string"/>
+	<xs:element name="hint" type="xs:string" minOccurs="0" maxOccurs="1"/>
+	
+	<xs:element name="image" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+        <xs:sequence>
+              <xs:element name="name" type="xs:string"/>
+              <xs:element name="location" type="xs:string"/>
+        </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+
+	<xs:element name="type">
+        <xs:complexType>
+        <xs:choice>
+        	<xs:element name="mcq">
+          	<xs:complexType>
+		<xs:sequence>
+          		<xs:element name="text" type="xs:string"/>
+			<xs:element name="options" minOccurs="0" maxOccurs="unbounded">
+          		<xs:complexType>
+                       	<xs:sequence>
+					<xs:element name="code" type="xs:string"/>
+					<xs:element name="text" type="xs:string"/>
+			</xs:sequence>
+          		</xs:complexType>
+        		</xs:element>
+		</xs:sequence>
+        	</xs:complexType>
+        	</xs:element>
+
+		<xs:element name="tf">
+          	<xs:complexType>
+		<xs:sequence>
+          		<xs:element name="text" type="xs:string"/>
+		</xs:sequence>
+        	</xs:complexType>
+        	</xs:element>
+
+		<xs:element name="fill_blanks">
+          	<xs:complexType>
+		<xs:sequence>
+          		<xs:element name="text_before_blank" type="xs:string"/>
+			<xs:element name="text_after_blank" type="xs:string"/>
+			<xs:element name="blank_length" type="xs:integer"/>
+		</xs:sequence>
+        	</xs:complexType>
+        	</xs:element>
+		
+		<xs:element name="match_columns">
+          	<xs:complexType>
+		<xs:sequence>
+          		<xs:element name="text" type="xs:string"/>
+			<xs:element name="tableA_options" minOccurs="0" maxOccurs="unbounded">
+          		<xs:complexType>
+                       	<xs:sequence>
+					<xs:element name="code" type="xs:string"/>
+					<xs:element name="text" type="xs:string"/>
+			</xs:sequence>
+          		</xs:complexType>
+        		</xs:element>
+			<xs:element name="tableB_options" minOccurs="0" maxOccurs="unbounded">
+          		<xs:complexType>
+                       	<xs:sequence>
+					<xs:element name="code" type="xs:string"/>
+					<xs:element name="text" type="xs:string"/>
+			</xs:sequence>
+          		</xs:complexType>
+        		</xs:element>
+		</xs:sequence>
+        	</xs:complexType>
+        	</xs:element>
+
+		<xs:element name="flash_card">
+          	<xs:complexType>
+		<xs:sequence>
+          		<xs:element name="question" type="xs:string"/>
+			<xs:element name="answer" type="xs:string"/>
+		</xs:sequence>
+        	</xs:complexType>
+        	</xs:element>
+		
+		<xs:element name="subjective">
+          	<xs:complexType>
+		<xs:sequence>
+          		<xs:element name="question" type="xs:string"/>
+			<xs:element name="length_expected" type="xs:integer"/>
+		</xs:sequence>
+        	</xs:complexType>
+        	</xs:element>
+		
+	</xs:choice>
+        </xs:complexType>
+        </xs:element>
+
+
+										
+				
+  </xs:sequence>
+  </xs:complexType>
+  </xs:element>
+</xs:schema>

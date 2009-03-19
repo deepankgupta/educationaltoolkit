@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+<test id="SampleTest001">
+    <!-- sample.xml
+         Sample test to examine parser.
+      -->
+    <question id="MyQuestion01" type="short_answer">
+        <credits>4</credits>
+        <text>What is 2 + 2?</text> <!-- perhaps content is a better name? -->
+        <expected-length>2</expected-length>
+        <difficulty>Easy</difficulty>
+    </question>
+    <question id="MyQuestion02" type="multiple_choice">
+        <credits>10</credits>
+        <text>The fourth root of 16 is <blank length="3" />.</text>
+        <difficulty>Medium</difficulty>
+        <choice name="a">2</choice>
+        <choice name="b">4</choice>
+        <choice name="c">12</choice>
+    </question>
+    <question id="MyQuestion03" type="true_false">
+        <credits>50</credits>
+        <text>The square root of -1 is a real number.</text>
+        <difficulty>Hard</difficulty>
+    </question>
+    <question id="MyQuestion04" type="flashcard">
+        <credits>2</credits>
+        <text>Mathematics</text>
+        <back-text>Involves many numbers</back-text>
+        <difficulty>Easy</difficulty>
+    </question>
+    <question id="MyQuestion05" type="matching">
+        <credits>10</credits>
+        <text>Match the following terms.</text>
+        <difficulty>Medium</difficulty>
+        <key>Addition</key>
+        <key>Subtraction</key>
+        <key>Multiplication</key>
+        <answer>The adding of multiple copies of a number</answer>
+        <answer>The combining of two numbers</answer>
+        <answer>The difference of two numbers</answer>
+    </question>
+    <question id="MyQuestion06" type="short_answer">
+        <img src="http://www.google.com/intl/en_ALL/images/logo.gif"
+             title="Company logo"
+             type="image/gif" />
+        <credits>4</credits>
+        <text>What is this company?</text>
+        <expected-length>6</expected-length>
+        <difficulty>Easy</difficulty>
+    </question>
+    <question id="MyQuestion07" type="true_false">
+        <image-page title="Image group">
+            <img title="Picture 1">H4sICN3WC0gAA2EucG5nAOsM8HPn5ZLiYmBg4PX0cAkC0gIgzMEGJOU//08EUizFTp4hHEBQw5HSAeRzFnhEFgPVXwdhRieN2RVAQckS14iS4Py0kvLEolSG8vJyvcy87OLkxIJUvfyi9NnvbKSAio55ujiGWPQuneTLdciBxy1+1aIHx/RiXi2aNu/IVPcP2/T2tkZNbVr3xu/Ijskmsr+bGw/UKH7+YSQZGFrT4cHFE7sz5Kr32shQbU6eBvUFet/3hYd2ZrlEMCx2sOW+0tQQukJwRueJPdwKhs/FA8x2ZjDHMP4umMtQ1iKjMYuhLvTeQc4J9QyWV3tNmF1U2JKeJ2SVaClNXLWv3tJjzj2G5MXqB4QsvjD+OKFzIP/hdfVPDfkVDeUbWK/5NmwT7Duwl38BQ5nb/Mb21XfftPKvuuW0RqfsRAbQRwyern4u65wSmgAfeWuFSQEAAA==</img>
+            <img title="Picture 2">H4sICO/WC0gAA2IucG5nAOsM8HPn5ZLiYmBg4PX0cAkC0gIgzMEGJOU//08EUizFTp4hHEBQw5HSAeRzFnhEFgPVXwdhRieN2RVAQckS14iS4Py0kvLEolSG8vJyvcy87OLkxIJUvfyi9NnvbKSAim55ujiGWPQunWzb5eQo0LJfzNVceE/DzEZ1gY8i0lWttkflDidLZKwKN4gQFOZlcUxNvXhkv1mB3LVXzc8THA+W+Ppf9DV89k7jzBq2CA3ZG0za5fsnsJX/P/7hxUT3BB6T+b/iTQIWt317HnR8VzJzjfdc9luG2meatgmslTZ2bFo0p7xqYuqHxLR4B9ctiWe4Ttl++JnHJbxANNmA/dWdR95b4nocJx0K2RJ/ICnY4vTOniWTMhPSVBdoXVL80NYjynfgfrPZpX81xxhaHVzju02aGb+/5ylgunZA6Efh9z6zeMb9bzhavNP+HAX6ksHT1c9lnVNCEwCRYeNyXQEAAA==</img>
+        </image-page>
+        <credits>4</credits>
+        <text>The two pictures I have are of an "A" and a "B".</text>
+        <difficulty>Easy</difficulty>
+    </question>
+</test>
