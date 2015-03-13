@@ -1,0 +1,3 @@
+The educational toolkit is a software to facilitate discussion in classroom with the help of technology. The software will aim at providing teachers and students with a tool to pose problems and then compare and discuss solutions. It will also be used as a formal testing tool for class tests and provide a better gauge of a student's progress to the teacher.
+
+The software will be developed in Python with emphasis on easy User Interface and will aim to act like a tool which does not take over the job of teaching, but promotes natural class environment and will aim to fit in the classroom environment. The choice of Python as a programming language gives us the power of Object Oriented Design and Implementation along with lots of libraries and easy integration with Sugar.
